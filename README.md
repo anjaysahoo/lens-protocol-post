@@ -1,38 +1,16 @@
-# create-svelte
+# Post Lens Protocol
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+### Library Used in this Project
+1. @urql/svelte: `For creating graphql client`
+2. graphql
+3. ethers: `For connecting wallet & signing transactions` 
+4. omit-deep: `For creating signed typed data`
+5. uuid: `For generating unique metadata id`
+6. web3.storage: `For uploading the post metadata to IPFS`
 
-## Creating a project
+### Steps to post a post on Lens Protocol
+1. Connect wallet using `Connect Wallet` button
+2. Get access token using `Get Access Token` button
+3. Get user profile using `First Get User Profile` button
+4. Create post using `Post Trial Text` button
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
